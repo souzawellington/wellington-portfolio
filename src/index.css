@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-feature-settings: 'cv11', 'ss01';
+    font-variation-settings: normal;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+
+  /* Suaviza o foco em inputs */
+  input:focus,
+  textarea:focus {
+    box-shadow: 0 0 0 3px rgb(251 191 36 / 0.1);
+  }
+}

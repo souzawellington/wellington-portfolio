@@ -1,0 +1,41 @@
+<svg viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="amberGlow" cx="50%" cy="0%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.08"/>
+      <stop offset="40%" stop-color="#fbbf24" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cornerGlow1" cx="0%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#27272a" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#27272a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cornerGlow2" cx="100%" cy="100%" r="50%">
+      <stop offset="0%" stop-color="#3f3f46" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3f3f46" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#52525b" opacity="0.25"/>
+    </pattern>
+    <linearGradient id="dotsMask" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="40%" stop-color="white" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="m1">
+      <rect width="1440" height="800" fill="url(#dotsMask)"/>
+    </mask>
+  </defs>
+
+  <!-- Fundo base -->
+  <rect width="1440" height="800" fill="#09090b"/>
+
+  <!-- Pattern de pontos com máscara -->
+  <rect width="1440" height="800" fill="url(#dots)" mask="url(#m1)"/>
+
+  <!-- Glow âmbar do topo -->
+  <rect width="1440" height="800" fill="url(#amberGlow)"/>
+
+  <!-- Glows sutis nos cantos inferiores -->
+  <rect width="1440" height="800" fill="url(#cornerGlow1)"/>
+  <rect width="1440" height="800" fill="url(#cornerGlow2)"/>
+</svg>
